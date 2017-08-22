@@ -60,7 +60,7 @@ my-app/
 安装其他的一些开发依赖<br>
 
 ```
-yarn add --dev babel-plugin-import svg-sprite-loader@0.3.1 less less-loader postcss-pxtorem<br>
+yarn add --dev babel-plugin-import svg-sprite-loader@0.3.1 less less-loader postcss-pxtorem
 ```
 
 接下来是项目的配置： <br>
