@@ -64,9 +64,9 @@ yarn add --dev babel-plugin-import svg-sprite-loader@0.3.1 less less-loader post
 ```
 
 #### 接下来是项目的配置： <br>
-<br>
-  打开 config 文件夹中的 `webpack.config.dev.js` 文件，在 `webpack.config.dev.js` 中找到 `exclude` 追加两行代码，用于加载 `less` 和 `svg` 文件<br>
-<br>
+
+  打开 config 文件夹中的 `webpack.config.dev.js` 文件，在 `webpack.config.dev.js` 中找到 `exclude` 追加两行代码，用于加载 `less` 和 `svg` 文件
+
 ```
 module.exports = {
     module: {
@@ -86,6 +86,7 @@ module.exports = {
     }
 }
 ```
+
 #### 添加按需加载文件处理插件<br>
 ```
 module.exports = {
