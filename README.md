@@ -199,9 +199,9 @@ export default App;
 
 #### 最后是使用antd-mobile提供的高清解决方案，你可以参考官方文档或者按照以下步骤：
 
-#### 下载
+#### 下载 
 [viewport.js](https://gw.alipayobjects.com/os/rmsportal/dVgyohpfmDMFFeDasFns.js)
-或者下载压缩版的 
+#### 或者下载压缩版的 
 [viewport.min.js](https://gw.alipayobjects.com/os/rmsportal/uDTmsEBmTUVrpmCBozbm.js) 
 
 #### 在 public 目录下的 index.html 中引入下载好的js，请内联写到所有 css 引用之前, 否则部分安卓机有问题，并且不要再设置meta标签的viewport
