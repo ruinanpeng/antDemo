@@ -1,6 +1,6 @@
 如何利用Facebook的create-react-app脚手架创建一个基于ant design mobile的项目
 ====
-引言：<br>
+#### 引言：<br>
 <br>
   `create-react-app`是`Facebook`发布的一款全局的命令行工具用来创建一个新的项目。<br>
 <br>
@@ -9,18 +9,18 @@
 <br>
   现在，如果你想要搭建一个完整的 `react` 项目环境，已经不需要自己动手布置许许多多的东西，利用 `create-react-app` 工具，就能轻松帮你配置好一个 `react` 项目。<br>
 <br>
-全局安装 `create-react-app`<br>
+#### 全局安装 `create-react-app`<br>
 
 ```
 npm i create-react-app -g
 ```
-创建一个应用程序<br>
+#### 创建一个应用程序<br>
 
 ```
 create-react-app ProjectName
 ```
 
-然后你可以看到创建完之后的目录结构<br>
+#### 然后你可以看到创建完之后的目录结构<br>
 
 ```
 my-app/
@@ -45,25 +45,25 @@ my-app/
  试着运行一下项目，输入 `npm run start` 回车，浏览器会自动打开一个地址为 `http://localhost:3000` 的页面，端口号为3000.<br>
 ![Image text](http://images2017.cnblogs.com/blog/1165657/201708/1165657-20170821112937621-1367375730.png)<br>
 <br>
-到这里，一个react项目基本上已经搭建完成了，现在我们为项目引入 `ant design mobile` 框架。<br>
+#### 到这里，一个react项目基本上已经搭建完成了，现在我们为项目引入 `ant design mobile` 框架。<br>
 
-使用yarn安装：<br>
+#### 使用yarn安装：<br>
 
 ```
     yarn add antd-mobile
 ```
-使用npm安装：<br>
+#### 使用npm安装：<br>
 ```
     npm install antd-mobile -D
 ```
 
-安装其他的一些开发依赖<br>
+#### 安装其他的一些开发依赖<br>
 
 ```
 yarn add --dev babel-plugin-import svg-sprite-loader@0.3.1 less less-loader postcss-pxtorem
 ```
 
-接下来是项目的配置： <br>
+#### 接下来是项目的配置： <br>
 <br>
   打开 config 文件夹中的 `webpack.config.dev.js` 文件，在 `webpack.config.dev.js` 中找到 `exclude` 追加两行代码，用于加载 `less` 和 `svg` 文件<br>
 <br>
@@ -86,7 +86,7 @@ module.exports = {
     }
 }
 ```
-添加按需加载文件处理插件<br>
+#### 添加按需加载文件处理插件<br>
 ```
 module.exports = {
     module: {
@@ -106,7 +106,7 @@ module.exports = {
   }
 }
 ```
-添加svg处理<br>
+#### 添加svg处理<br>
 ```
 module.exports = {
   module: {
@@ -125,7 +125,7 @@ module.exports = {
   }
 }
 ```
-添加less处理<br>
+#### 添加less处理<br>
 ```
 module.exports = {
   module: {
@@ -162,14 +162,14 @@ module.exports = {
 }
 ```
 
-在此之前必须要引入 `postcss-pxtorem` 模块，用于px转rem<br>
+#### 在此之前必须要引入 `postcss-pxtorem` 模块，用于px转rem<br>
 
 ```
 const pxtorem = require('postcss-pxtorem');
 ```
-重新启动项目，但是你会发现react的Logo没了。此时就轮到 `antd--design-mobile` 闪亮登场了。 <br>
+#### 重新启动项目，但是你会发现react的Logo没了。此时就轮到 `antd--design-mobile` 闪亮登场了。 <br>
 <br>
-在 src/App.js 中导入antd-mobile的Icon,代码如下：<br>
+#### 在 src/App.js 中导入antd-mobile的Icon,代码如下：<br>
 <br>
 
 ```
@@ -197,14 +197,15 @@ export default App;
 ```
 <br>
 
-最后是使用antd-mobile提供的高清解决方案，你可以参考官方文档或者按照以下步骤：
+#### 最后是使用antd-mobile提供的高清解决方案，你可以参考官方文档或者按照以下步骤：
 
-下载
+#### 下载
 [viewport.js](https://gw.alipayobjects.com/os/rmsportal/dVgyohpfmDMFFeDasFns.js)
 或者下载压缩版的 
 [viewport.min.js](https://gw.alipayobjects.com/os/rmsportal/uDTmsEBmTUVrpmCBozbm.js) 
 
-在 public 目录下的 index.html 中引入下载好的js，请内联写到所有 css 引用之前, 否则部分安卓机有问题，并且不要再设置meta标签的viewport<br>
+#### 在 public 目录下的 index.html 中引入下载好的js，请内联写到所有 css 引用之前, 否则部分安卓机有问题，并且不要再设置meta标签的viewport
+
 打开config/webpack.config.dev.js，新增一句代码<br>
 
 ```
