@@ -241,4 +241,5 @@ export default App;
     ],
   },
   ```
-重启项目，你会发现css单位由px转为了rem。<br>
+#### 重启项目，你会发现css单位由px转为了rem。
+#### 至此，一个基于ant design mobile 的项目就搭建完成啦！
