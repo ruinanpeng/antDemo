@@ -1,11 +1,11 @@
 如何利用Facebook的create-react-app脚手架创建一个基于ant design mobile的项目
 ====
 #### 引言：<br>
-<br>
-  `create-react-app`是`Facebook`发布的一款全局的命令行工具用来创建一个新的项目。<br>
+
+  `create-react-app` 是 `Facebook` 发布的一款全局的命令行工具用来创建一个新的项目。
 <br>
 
-  通常我们开始做一个`react web`或者 `app` 项目的时候，都会自己利用 `npm` 或者 `yarn` 安装项目所需要的一些依赖，再写 `webpack.config.js` ,一系列复杂的配置,搭建好开发环境后写src源代码。<br>
+  通常我们开始做一个`react` 项目的时候，都会自己利用 `npm` 或者 `yarn` 安装项目所需要的一些依赖，再写 `webpack.config.js` ,一系列复杂的配置,搭建好开发环境后写src源代码。<br>
 <br>
   现在，如果你想要搭建一个完整的 `react` 项目环境，已经不需要自己动手布置许许多多的东西，利用 `create-react-app` 工具，就能轻松帮你配置好一个 `react` 项目。<br>
 <br>
