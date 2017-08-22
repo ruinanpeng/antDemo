@@ -39,10 +39,10 @@ my-app/
 ----index.js
 ----logo.svg
 ```
-你会发现在整个项目文件夹中，并没有 `webpack.config.js` 文件，这时候你只需要在项目目录中执行 `npm run eject` 命令，你会看到他提示你 `Are you sure you want to eject? This is permanent.` 输入y,回车，打开项目文件夹你会发现多了两个目录（ `public` 、 `scripts`），像这样：<br>
+#### 你会发现在整个项目文件夹中，并没有 `webpack.config.js` 文件，这时候你只需要在项目目录中执行 `npm run eject` 命令，你会看到他提示你 `Are you sure you want to eject? This is permanent.` 输入y,回车，打开项目文件夹你会发现多了两个目录（ `public` 、 `scripts`），像这样：<br>
 ![Image text](http://images2017.cnblogs.com/blog/1165657/201708/1165657-20170821112527339-503510306.png)<br>
 <br>
- 试着运行一下项目，输入 `npm run start` 回车，浏览器会自动打开一个地址为 `http://localhost:3000` 的页面，端口号为3000.<br>
+####  试着运行一下项目，输入 `npm run start` 回车，浏览器会自动打开一个地址为 `http://localhost:3000` 的页面，端口号为3000.<br>
 ![Image text](http://images2017.cnblogs.com/blog/1165657/201708/1165657-20170821112937621-1367375730.png)<br>
 <br>
 #### 到这里，一个react项目基本上已经搭建完成了，现在我们为项目引入 `ant design mobile` 框架。<br>
